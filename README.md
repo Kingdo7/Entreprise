@@ -1,5 +1,25 @@
 # ProjetA
 
+Créer une application Web JEE qui permet d
+’afficher les identités
+-
+Un bouton permettra de récupérer les individus via WebService https://jsonplaceholder.typicode.com/users et de les
+afficher.
+
+Un lien sur chaque élément de la liste permettra d’afficher les informations de la personne
+Les notions ci
+dessous doivent être utilisées
+- Composant Père Fils
+- DataBinding
+- Bootstrap
+- Les services
+- Les directives
+- Les requêtes HTTP
+
+Projet réaliser par l'équipe:
+- Killian
+- Julie
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
 ## Development server

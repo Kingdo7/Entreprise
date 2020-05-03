@@ -16,7 +16,7 @@ Les notions ci-dessous doivent être utilisées :
 - Les directives
 - Les requêtes HTTP
 
-Projet réaliser par l'équipe :
+Projet réalisé par l'équipe :
 
 - Killian
 - Julie

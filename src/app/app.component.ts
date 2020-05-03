@@ -13,8 +13,6 @@ export class AppComponent {
 
   constructor(private webService: WebServiceService) {}
 
-  ngOnInit() {}
-
   ExecuteWs() {
     this.webService.getPosts().subscribe((data) => {
       this.posts = data;

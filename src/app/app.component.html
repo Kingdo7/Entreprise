@@ -7,9 +7,23 @@
   <body>
     <label>Print Title</label>
     <br />
-    <button (click)="ExecuteWs()">Init List</button>
-    <div>
-      <p *ngFor="let post of posts">Element : {{ post.name }}</p>
-    </div>
+
+    <button type="button" class="btn btn-primary" (click)="ExecuteWs()">
+      Init List
+    </button>
+
+    <table class="table-bordered">
+      <tbody>
+        <tr *ngFor="let post of posts">
+          <td>
+            <a [routerLink]="['/individu']">{{ post.name }}</a>
+          </td>
+        </tr>
+        <tr>
+          <router-outlet></router-outlet>
+        </tr>
+      </tbody>
+    </table>
+    <router-outlet></router-outlet>
   </body>
 </html>

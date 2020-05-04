@@ -12,18 +12,15 @@
       Init List
     </button>
 
-    <table class="table-bordered">
-      <tbody>
-        <tr *ngFor="let post of posts">
-          <td>
-            <a [routerLink]="['/individu']">{{ post.name }}</a>
-          </td>
-        </tr>
-        <tr>
-          <router-outlet></router-outlet>
-        </tr>
-      </tbody>
-    </table>
-    <router-outlet></router-outlet>
+    <ul class="list-group">
+      <li *ngFor="let post of posts" class="list-group-item">
+        <a (click)="afficherInfos(post)">{{ post.name }}</a>
+      </li>
+    </ul>
+    <div class="details_post">
+      <div *ngIf="infosIndividu">
+        <app-individu post="{{ infosPost }}"></app-individu>
+      </div>
+    </div>
   </body>
 </html>

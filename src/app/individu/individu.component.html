@@ -1,50 +1,29 @@
-<table class="table">
+<table class="table table-bordered">
   <tr>
-    <td class="font-weight-bold">
-      Nom :
-    </td>
-    <td class="font-weight-bold">
-      {{ nom }}
-    </td>
+    <th scope="row">Nom :</th>
+    <td>{{ infosIndividu.name }}</td>
   </tr>
   <tr>
-    <td class="font-weight-bold">
-      Société :
-    </td>
-    <td>
-      {{ societe }}
-    </td>
+    <th scope="row">Société :</th>
+    <td>{{ infosIndividu.company.name }}</td>
   </tr>
   <tr>
-    <td class="font-weight-bold">
-      Website :
-    </td>
-    <td>
-      {{ site }}
-    </td>
+    <th scope="row">Website :</th>
+    <td>{{ infosIndividu.website }}</td>
   </tr>
   <tr>
-    <td class="font-weight-bold">
-      Tel :
-    </td>
-    <td>
-      {{ tel }}
-    </td>
+    <th scope="row">Tel :</th>
+    <td>{{ infosIndividu.phone }}</td>
   </tr>
   <tr>
-    <td class="font-weight-bold">
-      Mail :
-    </td>
-    <td>
-      {{ email }}
-    </td>
+    <th scope="row">Mail :</th>
+    <td>{{ infosIndividu.email }}</td>
   </tr>
   <tr>
-    <td class="font-weight-bold">
-      Adresse :
-    </td>
+    <th scope="row">Adresse :</th>
     <td>
-      {{ adresse }}
+      {{ infosIndividu.address.street }} {{ infosIndividu.address.suite }}
+      {{ infosIndividu.address.zipcode }} {{ infosIndividu.address.city }}
     </td>
   </tr>
 </table>

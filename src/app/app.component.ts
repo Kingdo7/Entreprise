@@ -10,6 +10,8 @@ export class AppComponent {
   title = 'Projet A';
 
   posts: any;
+  infosPost: any;
+  infosIndividu: boolean;
 
   constructor(private webService: WebServiceService) {}
 
@@ -21,5 +23,10 @@ export class AppComponent {
         console.log(post.name);
       });
     });
+  }
+
+  afficherInfos(post: any): void {
+    this.infosPost = JSON.stringify(post);
+    this.infosIndividu = true;
   }
 }

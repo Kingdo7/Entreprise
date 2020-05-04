@@ -8,8 +8,16 @@
     <label>Print Title</label>
     <br />
     <button (click)="ExecuteWs()">Init List</button>
-    <div>
-      <p *ngFor="let post of posts">♦ {{ post.name }}</p>
+
+    <ul class="list-group">
+      <li *ngFor="let post of posts" class="list-group-item">
+        <a (click)="affich_details(post)">{{ post.name }}</a>
+      </li>
+    </ul>
+   
+    <div *ngIf="clic_liste">
+      <app-personne post="{{ details_pers_value }}"></app-personne>
     </div>
+
   </body>
 </html>

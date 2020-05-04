@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-personne',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personne.component.css']
 })
 export class PersonneComponent implements OnInit {
+  @Input() post: any;
+  details_personne: any;
 
   constructor() { }
-
   ngOnInit(): void {
+    
+  }
+
+  ngDetailPersonne(): void {
+    this.details_personne = JSON.parse(this.post);
   }
 
 }

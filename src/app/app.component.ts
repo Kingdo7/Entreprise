@@ -7,7 +7,6 @@ import { WebServiceService } from './web-service.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Projet A';
 
   posts: any;
 

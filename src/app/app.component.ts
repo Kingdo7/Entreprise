@@ -7,13 +7,13 @@ import { WebServiceService } from './web-service.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Projet A';
 
   posts: any;
+  clic_list: boolean;  
+  details_pers_value: any;
+  alignement = 'center';
 
   constructor(private webService: WebServiceService) {}
-
-  ngOnInit() {}
 
   ExecuteWs() {
     this.webService.getPosts().subscribe((data) => {
@@ -23,5 +23,10 @@ export class AppComponent {
         console.log(post.name);
       });
     });
+  }
+  
+  affich_details(post: any): void {    
+    this.details_pers_value = JSON.stringify(post);
+    this.clic_list = true;
   }
 }

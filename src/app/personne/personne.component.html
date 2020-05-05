@@ -1,8 +1,10 @@
 <ul>
-    <li >Nom : {{ details_personne.name }}</li>
-    <li >Société : {{ details_personne.name }}</li>
-    <li >Website : {{ details_personne.name }}</li>
-    <li >Téléphone : {{ details_personne.name }}</li>
-    <li >E-mail : {{ details_personne.name }}</li>
-    <li >Adresse : {{ details_personne.name }}</li>
+    <li ><b>Nom :</b> {{ details_personne.name }}</li>
+    <li ><b>Société :</b> {{ details_personne.company.name }}</li>
+    <li ><b>Website :</b> {{ details_personne.website }}</li>
+    <li ><b>Téléphone :</b> {{ details_personne.phone }}</li>
+    <li ><b>E-mail :</b> {{ details_personne.email }}</li>
+    <li ><b>Adresse :</b> {{ details_personne.address.street }} <br>
+        {{ details_personne.address.suite }} <br>
+        {{ details_personne.address.zipcode }} {{ details_personne.address.city }}</li>
 </ul>

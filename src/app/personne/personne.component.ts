@@ -14,7 +14,7 @@ export class PersonneComponent implements OnInit {
     
   }
 
-  ngDetailPersonne(): void {
+  ngOnChanges(): void {
     this.details_personne = JSON.parse(this.post);
   }
 

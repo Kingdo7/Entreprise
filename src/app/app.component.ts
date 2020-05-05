@@ -9,7 +9,7 @@ import { WebServiceService } from './web-service.service';
 export class AppComponent {
 
   posts: any;
-  clic_liste: boolean;  
+  clic_list: boolean;  
   details_pers_value: any;
 
   constructor(private webService: WebServiceService) {}
@@ -26,6 +26,6 @@ export class AppComponent {
   
   affich_details(post: any): void {    
     this.details_pers_value = JSON.stringify(post);
-    this.clic_liste = true;
+    this.clic_list = true;
   }
 }

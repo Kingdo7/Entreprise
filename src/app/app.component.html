@@ -2,15 +2,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projet A</title>
   </head>
   <body>
-    <label>Print Title</label>
+    <div [align]="alignement">
+      <label>
+        <span class="badge badge-secondary">Projet Angular</span>
+      </label>
+    </div>
+    
     <br />
-    <button (click)="ExecuteWs()">Init List</button>
+    <button class="btn btn-primary" (click)="ExecuteWs()">Init List</button>
 
-    <ul class="list-group">
-      <li *ngFor="let post of posts" class="list-group-item">
+    <ul class="list-group list-group-horizontal">
+      <li *ngFor="let post of posts" class="list-group-item ">
         <a (click)="affich_details(post)">{{ post.name }}</a>
       </li>
     </ul>

@@ -11,6 +11,7 @@ export class AppComponent {
   posts: any;
   clic_list: boolean;  
   details_pers_value: any;
+  alignement = 'center';
 
   constructor(private webService: WebServiceService) {}
 

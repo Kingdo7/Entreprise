@@ -1,10 +1,22 @@
 <ul class="list-group">
-    <li class="list-group-item list-group-item-info"><b>Nom : {{ details_personne.name }}</b></li>
-    <li class="list-group-item list-group-item-info"><b>Société :</b> {{ details_personne.company.name }}</li>
-    <li class="list-group-item list-group-item-info"><b>Website :</b> {{ details_personne.website }}</li>
-    <li class="list-group-item list-group-item-info"><b>Téléphone :</b> {{ details_personne.phone }}</li>
-    <li class="list-group-item list-group-item-info"><b>E-mail :</b> {{ details_personne.email }}</li>
-    <li class="list-group-item list-group-item-info"><b>Adresse :</b> {{ details_personne.address.street }} <br>
-        {{ details_personne.address.suite }} <br>
-        {{ details_personne.address.zipcode }} {{ details_personne.address.city }}</li>
+  <li class="list-group-item list-group-item-info">
+    <b>Nom : {{ details_personne.name }}</b>
+  </li>
+  <li class="list-group-item list-group-item-info">
+    <b>Société :</b> {{ details_personne.company.name }}
+  </li>
+  <li class="list-group-item list-group-item-info">
+    <b>Website :</b> {{ details_personne.website }}
+  </li>
+  <li class="list-group-item list-group-item-info">
+    <b>Téléphone :</b> {{ details_personne.phone }}
+  </li>
+  <li class="list-group-item list-group-item-info">
+    <b>E-mail :</b> {{ details_personne.email }}
+  </li>
+  <li class="list-group-item list-group-item-info">
+    <b>Adresse :</b> {{ details_personne.address.street }} <br />
+    {{ details_personne.address.suite }} <br />
+    {{ details_personne.address.zipcode }} {{ details_personne.address.city }}
+  </li>
 </ul>
